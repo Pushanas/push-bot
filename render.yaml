@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: push-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: POLYGON_API_KEY
+        value: xIU7tXVgVjt920P9mWeN0pApi6kXxipg
